@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
 
-body{
+
+ body{
     background-color: black;
     margin: 0;
     padding: 0;
@@ -44,8 +45,10 @@ a {
     height: 675px;
     border-radius: 100px;
 }
+
 .container{
     position: relative;
+    
 }
 .container ::before{
     content: '';
@@ -55,6 +58,7 @@ a {
     background: linear-gradient(to top,#1c0522,#fff);
     z-index: 1000;
 }
+@media only screen and (min-width: 600px){
 .container-word{
     position: absolute;
     color: white;
@@ -62,11 +66,27 @@ a {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 6vh;
     top: 50%;
-    left: 28%;
+    left: 40%;
     transform: translate(-50%, -50%);
 }
 h2, h3, h4{
     margin: auto;
+}
+}
+@media only screen and (max-width: 600px){
+    .container-word{
+        position: absolute;
+        color: white;
+        /*font-family: 'Pacifico', cursive;*/
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 3vh;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        top: 50%;
+    }
+    h2, h3, h4{
+        margin: auto;
+    }
 }
 p{
     color: white;
@@ -94,53 +114,107 @@ p{
     justify-content: space-evenly;
     padding: 30px;
     background-color: white;
-    margin: 40px
+    margin: 40px;
+    overflow: hidden;
 
 }
-.about-text{
-    color: black;
+@media only screen and (max-width:600px) {
+    .about-img{
+        padding-left: 33px;
+    }
+    .about-text{
+        color: black;
+    }
+    .about-about{
+        color: white;
+        font-family: 'Alkatra', cursive;
+    }
+    .about-about h1{
+        color: black;
+        padding: 0 30%;
+        font-size: 12px;
+    }
+    .about-para p{
+        font-size: 12px;
+        -webkit-text-stroke: 1px black;
+        -webkit-text-fill-color: grey;
+    }
+    .button-cv{
+        height: 60px;
+        width: 100px;
+        border: none;
+        font-size: 10px;
+        font-family: 'Alkatra', cursive;
+        border-radius: 30px;
+        background: black;
+        white-space: nowrap;
+    }
+    .button-style{
+        height: 60px;
+        width: 100px;
+        background:black;
+        transition: width 0.8s;
+        border-radius: 30px;
+    }
+    #btn-hover{
+        transition-timing-function: linear;
+    }
+    .button-style:hover{
+        width: 200px
+    }
+    .button-style a{
+        color: yellowgreen;
+        padding-left: 10px;
+    }
 }
-.about-about{
-    color: white;
-    font-family: 'Alkatra', cursive;
+@media only screen and (min-width: 600px){
+    .about-text{
+        color: black;
+    }
+    .about-about{
+        color: white;
+        font-family: 'Alkatra', cursive;
+    }
+    .about-about h1{
+        color: black;
+        padding: 0 30%;
+        font-size: 40px;
+    }
+    .about-para p{
+        font-size: 1.8rem;
+        -webkit-text-stroke: 1px black;
+        -webkit-text-fill-color: grey;
+    }
+    .button-cv{
+        height: 60px;
+        width: 100px;
+        border: none;
+        font-size: 30px;
+        font-family: 'Alkatra', cursive;
+        border-radius: 30px;
+        background: black;
+        white-space: nowrap;
+    }
+    .button-style{
+        height: 60px;
+        width: 100px;
+        background:black;
+        transition: width 0.8s;
+        border-radius: 30px;
+    }
+    #btn-hover{
+        transition-timing-function: linear;
+    }
+    .button-style:hover{
+        width: 200px
+    }
+    .button-style a{
+        color: yellowgreen;
+        padding-left: 10px;
+    }
+
 }
-.about-about h1{
-    color: black;
-    padding: 0 30%;
-    font-size: 40px;
-}
-.about-para p{
-    font-size: 1.8rem;
-    -webkit-text-stroke: 1px black;
-    -webkit-text-fill-color: grey;
-}
-.button-cv{
-    height: 60px;
-    width: 100px;
-    border: none;
-    font-size: 30px;
-    font-family: 'Alkatra', cursive;
-    border-radius: 30px;
-    background: black;
-    white-space: nowrap;
-}
-.button-style{
-    height: 60px;
-    width: 100px;
-    background:black;
-    transition: width 0.8s;
-    border-radius: 30px;
-}
-#btn-hover{
-    transition-timing-function: linear;
-}
-.button-style:hover{
-    width: 200px
-}
-.button-style a{
-    color: yellowgreen;
-    padding-left: 10px;
-}
+
 .tech-details{
     display: flex;
     justify-content: center;
@@ -206,5 +280,3 @@ p{
     background: white;
     cursor: pointer;
 }
-
-

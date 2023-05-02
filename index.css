@@ -97,7 +97,7 @@ h2, h3, h4{
         /*font-family: 'Pacifico', cursive;*/
         font-family: 'Nunito Sans', sans-serif;
         font-size: 3vh;
-        left: 35%;
+        left: 45%;
         transform: translate(-50%, -50%);
         top: 50%;
     }
@@ -132,15 +132,16 @@ p{
     padding: 30px;
     background-color: white;
     margin: 40px;
-    overflow-wrap: break-word;
 
 }
 @media only screen and (max-width:600px) {
     .about-img{
-        padding-left: 33px;
+        padding-left: 2px;
     }
     .about-text{
         color: black;
+        overflow-wrap: normal;
+        padding-right: 4px;
     }
     .about-about{
         color: white;

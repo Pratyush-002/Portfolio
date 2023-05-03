@@ -5,7 +5,6 @@
 
  body{
     background-color: black;
-    
 }
 @media only screen and (min-width: 600px){
     .logo{
@@ -80,7 +79,7 @@ a {
     font-family: 'Nunito Sans', sans-serif;
     font-size: 6vh;
     top: 50%;
-    left: 30%;
+    left: 38%;
     transform: translate(-50%, -50%);
 }
 h2, h3, h4{
@@ -229,54 +228,104 @@ p{
     }
 
 }
-
+@media only screen and (max-width:700px){
+    .tech-details{
+        margin:0px 40px ;
+    }
+}
+@media only screen and (min-width: 700px){
+    .tech-details{
+        margin: 0px 100px;
+    }
+}
 .tech-details{
     display: flex;
     justify-content: center;
     background-color: white;
     height: 300px;
-    margin: 0px 100px;
     align-items: center;
     border-radius: 100px;
 }
 .tech-details img{
     margin: auto;
 }
+@media only screen and (max-width: 600px){
+    .tech-details p{
+        font-size: 0.8em;
+    }
+}
+@media only screen and (min-width: 600px){
+    .tech-details p{
+        font-size: 1.6em;
+    }
+}
 .tech-details p{
     color: black;
     text-align: center;
-    font-size: 1.6em;
+}
+@media only screen and (min-width:600px){
+    .html-logo{
+        height: 120px;
+        width: auto;
+    }
+    .css-logo{
+        height: 120px;
+        width: auto;
+    }
+    .JS-logo{
+        height: 120px;
+        width: auto;
+    }
+    .mysql-logo{
+        height: 133px;
+        width: auto;
+        
+    }
+    .linux-logo{
+        height: auto;
+        width: 188px;
+    }
+    .git-logo{
+        height: 126px;
+        width: auto;
+    }
+    .react-logo{
+        height: 129px;
+        width: auto;
+    }
+}
+@media only screen and (max-width:600px){
+    .html-logo{
+        height: 70px;
+        width: auto;
+    }
+    .css-logo{
+        height: 70px;
+        width: auto;
+    }
+    .JS-logo{
+        height: 70px;
+        width: auto;
+    }
+    .mysql-logo{
+        height: 70px;
+        width: auto;
+        
+    }
+    .linux-logo{
+        height: auto;
+        width: 100px;
+    }
+    .git-logo{
+        height: 70px;
+        width: auto;
+    }
+    .react-logo{
+        height: 70px;
+        width: auto;
+    }
+}  
 
-}
-.html-logo{
-    height: 120px;
-    width: auto;
-}
-.css-logo{
-    height: 120px;
-    width: auto;
-}
-.JS-logo{
-    height: 120px;
-    width: auto;
-}
-.mysql-logo{
-    height: 133px;
-    width: auto;
-    
-}
-.linux-logo{
-    height: auto;
-    width: 188px;
-}
-.git-logo{
-    height: 126px;
-    width: auto;
-}
-.react-logo{
-    height: 129px;
-    width: auto;
-}
 .tech-details .prev_arrow{
     color: grey;
     width: 50px;

@@ -22,4 +22,12 @@ loginForm.addEventListener("submit", (e) => {
     }
   });
 
+const hamburger = document.querySelector(".hamburger");
+
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click",()=>{
+  document.querySelector(".header-list").classList.toggle("hello");
+  navMenu.classList.toggle("hello");
+})
   

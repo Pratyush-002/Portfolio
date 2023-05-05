@@ -17,8 +17,8 @@
     width: 25px;
     height: 3px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.7s ease-in-out;
+    transition: all 0.7s ease-in-out;
     background-color: white;
 }
 .header-list.hello{
@@ -71,36 +71,6 @@ a {
     width: 100%;
     background: linear-gradient(to top,#1c0522,#fff);
     z-index: 1000;
-}
-@media only screen and (min-width: 600px){
-.container-word{
-    position: absolute;
-    color: white;
-    /*font-family: 'Pacifico', cursive;*/
-    font-family: 'Nunito Sans', sans-serif;
-    font-size: 6vh;
-    top: 50%;
-    left: 38%;
-    transform: translate(-50%, -50%);
-}
-h2, h3, h4{
-    margin: auto;
-}
-}
-@media only screen and (max-width: 600px){
-    .container-word{
-        position: absolute;
-        color: white;
-        /*font-family: 'Pacifico', cursive;*/
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 3vh;
-        left: 45%;
-        transform: translate(-50%, -50%);
-        top: 50%;
-    }
-    h2, h3, h4{
-        margin: auto;
-    }
 }
 p{
     color: white;
@@ -365,12 +335,18 @@ p{
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: blue;
+        background-color: white;
         width: 100%;
         text-align: center;
-        transition: 0.3s;
+        transition: 0.8s;
         display: none;
-        z-index: 1
+        z-index: 1;
+    }
+    .nav-link{
+        color: black;
+    }
+    .nav-item .nav-link:hover{
+        color: black;
     }
     .nav-item{
         margin: 16px 0;
@@ -379,3 +355,33 @@ p{
         right: 0;
     }
 }
+@media only screen and (min-width: 600px){
+    .container-word{
+        position: absolute;
+        color: white;
+        /*font-family: 'Pacifico', cursive;*/
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 6vh;
+        top: 50%;
+        left: 38%;
+        transform: translate(-50%, -50%);
+    }
+    h2, h3, h4{
+        margin: auto;
+    }
+    }
+    @media only screen and (max-width: 600px){
+        .container-word{
+            position: absolute;
+            color: white;
+            /*font-family: 'Pacifico', cursive;*/
+            font-family: 'Nunito Sans', sans-serif;
+            font-size: 3vh;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            top: 50%;
+        }
+        h2, h3, h4{
+            margin: auto;
+        }
+    }

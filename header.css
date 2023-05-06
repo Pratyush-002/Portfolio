@@ -18,27 +18,24 @@
   --color-quinary: #A2C4F5;
   */
 }
-
 .border-container {
-  align-content: center;
-  justify-content: center;
+  text-align: center;
 }
 
 .container-word {
   text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
     9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
   font-family: bungee, sans-serif;
-  font-weight: 400;
+  font-weight: 200;
   text-transform: uppercase;
-  font-size: calc(2rem + 5vw);
+  font-size: calc(1.2rem + 5vw);
   text-align: center;
   margin: 0;
   color: var(--color-primary);
   color: transparent;
-  background-color: white;
   background-clip: text;
   animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.2rem;
 }
 
 @keyframes shadows {

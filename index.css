@@ -360,13 +360,8 @@ p{
 @media only screen and (min-width: 600px){
     .container-word{
         position: absolute;
-        color: white;
-        /*font-family: 'Pacifico', cursive;*/
-        font-family: 'Nunito Sans', sans-serif;
-        font-size: 6vh;
-        top: 50%;
-        left: 38%;
-        transform: translate(-50%, -50%);
+        top: 14%;
+        left: 5%;
     }
     h2, h3, h4{
         margin: auto;
